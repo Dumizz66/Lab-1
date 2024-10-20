@@ -21,7 +21,7 @@ def draw_lim(filename, color1 = 1, color2 = 20):
     
     print(f" {bollshe5}%  {SET_COLOR}{color1}m{'   ' * (len(bolshe5)//5) }{END} положительные числа больше 5")
     print(f" {mennshe5}%  {SET_COLOR}{color2}m{'   ' * (len(menshe5)//5) }{END} положительные числа меньше 5")
-
+ 
 
 if __name__ == "__main__":
     print('Задание №4. Диаграммa процентного соотношения')
