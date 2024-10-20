@@ -18,7 +18,6 @@ SET_COLOR = "\x1b[48;5;"
 END = "\x1b[0m"
 CLEAR = "\033[H"
 color = [232,255,19]
-
 def draw_ele(color,t):
     line = ' ' * t
     print(f"{SET_COLOR}{color}m{line}{END}", end = '')
@@ -71,8 +70,6 @@ def draw_img():
 if __name__ == "__main__":
   for i in range(1):
     draw_img()
-    
-    
     
 SET_COLOR = "\x1b[48;5;"
 END = "\x1b[0m"
