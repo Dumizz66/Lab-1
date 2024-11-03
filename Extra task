@@ -1,0 +1,28 @@
+import os
+import time
+
+SET_COLOR = "\x1b[48;5;"
+END = "\x1b[0m"
+CLEAR = "\033[H"
+
+Gray = 243
+Turquoise = 30
+Pink = 200
+def draw_line(color):
+    line = ''
+    print(f"{SET_COLOR}{color}m{line}{END}",end = '')
+
+def clear_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def ani_letters(letters, duration=1):
+    while True:
+        for letter in letters:
+            clear_console()
+            print(letter)
+            time.sleep(duration)
+
+if __name__ == "__main__":
+    letters = [ f"{SET_COLOR}{Gray}m{'       '}{END}", f"{SET_COLOR}{Turquoise}m{'       '}{END}", f"{SET_COLOR}{Pink}m{'       '}{END}", ]
+
+    ani_letters(letters)
